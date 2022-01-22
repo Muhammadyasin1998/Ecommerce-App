@@ -19,7 +19,15 @@ app.use(express.json());
 
 //get Routes
 const userRoute = require('./routes/user');
+const productRoute = require('./routes/product');
+const orderRoute = require('./routes/order');
+
 app.use('/users', userRoute);
+
+app.use('/product', productRoute);
+app.use('/order', orderRoute);
+
+
 
 
 
